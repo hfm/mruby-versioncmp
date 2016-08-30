@@ -8,18 +8,19 @@ MRuby::Build.new do |conf|
 
     # ... (snip) ...
 
-    conf.gem :github => 'hfm/mruby-versioncmp'
+    conf.gem github: 'hfm/mruby-versioncmp'
 end
 ```
 ## example
 ```ruby
-p VersionCmp.hi
-#=> "hi!!"
-t = VersionCmp.new "hello"
-p t.hello
-#=> "hello"
-p t.bye
-#=> "hello bye"
+v1 = VersionCmp.new("1.0.0")
+v2 = VersionCmp.new("1.0.1")
+
+if v1 < v2
+  p "v1 is smaller than v2"
+else
+  p "v1 is bigger than v2"
+end
 ```
 
 ## License
