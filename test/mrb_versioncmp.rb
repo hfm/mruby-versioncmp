@@ -8,6 +8,9 @@ assert("VersionCmp#<=>") do
   v3 = VersionCmp.new "1.1.0"
   v4 = VersionCmp.new "2.0.0"
 
+  assert_true v1 <= v1
+  assert_true v1 => v1
+
   assert_true v1 < v2
   assert_true v1 < v3
   assert_true v1 < v4
