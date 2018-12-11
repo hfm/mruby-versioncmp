@@ -1,5 +1,5 @@
 MRUBY_CONFIG=File.expand_path(ENV["MRUBY_CONFIG"] || ".travis_build_config.rb")
-MRUBY_VERSION=ENV["MRUBY_VERSION"] || "1.2.0"
+MRUBY_VERSION=ENV["MRUBY_VERSION"] || "2.0.0"
 
 file :mruby do
   #sh "wget -O mruby.tar.gz https://github.com/mruby/mruby/archive/#{MRUBY_VERSION}.tar.gz"
